@@ -6,14 +6,14 @@ import './Car.css'
 
 const Car = (props) => {
     console.log(props)
-    const{img, _id, price, discreption} = props.car;
+    const{name, img, _id, price, discreption} = props.car;
 
     return (
         <div className="product">
         <Card  className="borders" style={{ width: '22rem' }}>
          <Card.Img variant="top" src={img} className="img"  />
          <Card.Body>
-         <Card.Title className="card-tittle mt-3"></Card.Title>
+         <Card.Title className="card-tittle mt-3">{name}</Card.Title>
          <Card.Text>
          {discreption}
          <h3 className="mt-2 price">{price}</h3>

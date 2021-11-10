@@ -1,0 +1,12 @@
+.register{
+    padding-top: 40px  ;
+    background-color: rgb(92, 0, 92);
+}
+
+form input {
+    margin-top:  17px;
+    padding: 10px 10px;
+    border-radius: 10px;
+    width: 300px;
+    border : 2px solid rgb(255, 255, 255)
+}
