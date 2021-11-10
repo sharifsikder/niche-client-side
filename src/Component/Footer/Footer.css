@@ -1,0 +1,113 @@
+.footer-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    background-color: #282932;
+    padding:40px 0 30px 0;
+   
+}
+.contact{
+    text-align: left !important;
+    margin-left: 100px;
+    color: silver
+}
+.contact i{
+    color:white !important;
+}
+
+.items-list{
+    color:silver;
+    list-style: none;
+    cursor: pointer;
+    margin-top:15px;
+    text-align: center;
+}
+.items-list p:hover{
+    text-decoration: underline;
+}
+.items-link h2{
+    color: #F7B614;
+    text-align: center;
+
+}
+.icon{
+    margin-left: 10px;
+    color: #F7B614;
+
+    font-size: 20px;
+    cursor: pointer;
+    transition: .5s;
+
+}
+
+.icon:hover {
+    color:rgb(5, 252, 240) !important; 
+}
+.contact-site{
+    color:silver;
+    margin-top:10px;
+    padding-right: 20px;
+}
+
+.copy-right{
+    color:white;
+    background-color: #083B46;
+    padding-top: 10px;
+    padding-bottom: 15px;
+  
+}
+
+
+/* Make it responsive */
+
+@media only screen and (max-width:688px) {
+    .footer-container{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        
+    }
+
+    .contact{
+       margin: 0 auto;
+        color:silver;
+    }
+    .contact i{
+        color:white !important;
+    }
+
+    .items-link{
+        display: none;
+    }   
+
+    .contact-site{
+       
+        margin-top:20px;
+        padding: 0px 20px;
+        text-align: center !important;
+    }
+}
+
+@media only screen and (min-width:689px) and (max-width:991px) {
+    .footer-container{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        
+    }
+
+    .course-link{
+        display: none;
+    } 
+
+    .contact{
+        margin: 0 auto;
+         color: silver;
+     }
+
+     .contact i{
+        color:white !important;
+    }
+    .contact-site{
+       
+        margin-top:5px
+    }
+  
+}
