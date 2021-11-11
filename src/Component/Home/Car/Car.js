@@ -16,7 +16,7 @@ const Car = (props) => {
          <Card.Title className="card-tittle mt-3">{name}</Card.Title>
          <Card.Text>
          {discreption}
-         <h3 className="mt-2 price">{price}</h3>
+         <h3 className="mt-2 price">Price : {price}</h3>
          </Card.Text>
          <Link to={`/order/${_id}`}>
          <Button className="mb-4 mt-2" variant="outline-success">Buy Now</Button></Link>

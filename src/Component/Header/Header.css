@@ -8,3 +8,15 @@ span.name {
     margin-left: 23px;
     margin-right: 24px;
 }
+
+.dashborad{
+    display: block;
+    text-decoration: none;
+    font-size: 25px;
+    text-align: left;
+}
+
+.dashborad:hover{
+    text-decoration: underline;
+    color:black
+}

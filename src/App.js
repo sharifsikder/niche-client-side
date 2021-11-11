@@ -1,12 +1,16 @@
 import { BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 import './App.css';
+import Dashboard from './Component/Dashboard/Dashboard';
 import Footer from './Component/Footer/Footer';
 import Header from './Component/Header/Header';
 import Home from './Component/Home/Home';
 import Login from './Component/Login/Login';
+import MyOrders from './Component/MyOrders/MyOrders';
 import Order from './Component/Order/Order';
+import Pay from './Component/Pay/Pay';
 import Products from './Component/Products/Products';
 import Register from './Component/Register/Register';
+import Review from './Component/Review/Review';
 import AuthProvider from './context/AuthProvider';
 import PrivateRoute from './PrivateRoute/PrivateRoute';
 
@@ -28,6 +32,15 @@ function App() {
           </PrivateRoute>
           <Route path="/login">
             <Login></Login>
+          </Route>
+          <Route path="/review">
+            <Review></Review>
+          </Route>
+          <Route path="/pay">
+            <Pay></Pay>
+          </Route>
+          <Route path="/myorders">
+            <MyOrders></MyOrders>
           </Route>
           <Route path="/register">
             <Register></Register>

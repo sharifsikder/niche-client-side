@@ -62,18 +62,21 @@ const useFirebase = () => {
     
     const signUpEmail = (e) => {
         
-        // e.preventDefault();
-        // if(password.length < 8){
-        //     setError('Passwoed Should be 2 uppercase and 8 character')
-        //     return;
-        // }
-       return createUserWithEmailAndPassword(auth, email, password)
-        // .then(result => {
-        //     setUser(result.user);
-        //     console.log(result.user);
-        //     setUserName()
+
+        e.preventDefault();
+        if(password.length < 8){
+            setError('Passwoed Should be 2 uppercase and 8 character')
+            return;
+        }
+        createUserWithEmailAndPassword(auth, email, password)
+        .then(result => {
+            setUser(result.user);
+            console.log(result.user);
+            setUserName()
           
-        // })
+        
+        
+        })
         
     }
 

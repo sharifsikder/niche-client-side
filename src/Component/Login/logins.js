@@ -1,15 +1,13 @@
 
 import React from 'react';
-import { Link} from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 import './Register.css'
 
 import useAuht from '../../hooks/useAuth';
 
 const Register = () => {
-    const { handelName, error, signUpEmail, HandelPassword, HandelEmail , googleSingIn} = useAuht();
-
-    
+    const { handelName, error, signUpEmail, HandelPassword, HandelEmail , googleSingIn} = useAuht()
     return (
         <div className='register'>
             <div className="login-box d-flex align-items-center justify-content-center">

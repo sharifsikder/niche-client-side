@@ -1,0 +1,110 @@
+.contact-image {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.623), rgba(0, 0, 0, 0.651)), url("https://images.unsplash.com/photo-1423666639041-f56000c27a9a?ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8Y29udGFjdCUyMHVzfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60");
+    height: 400px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+  
+  .contact-text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+  }
+  .contact-text p{
+      color: silver !important;
+  }
+  
+  .contact-text button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 10px 25px;
+    color: black;
+    background-color: #ddd;
+    text-align: center;
+    cursor: pointer;
+  }
+  
+  .contact-text button:hover {
+    background-color: #555;
+    color: white;
+  }
+
+
+  .contact-section{
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      padding: 40px 0;
+      background-color: rgb(224, 224, 224);
+  }
+
+  .form-button{
+      text-align: left;
+    
+  }
+  .form-button Button{
+      border:0;
+      border-radius: 5px;
+      padding:8px 20px;
+      background-color: #E0E0E0;
+      color: rgb(4, 124, 118);
+    
+      border: 2px solid  rgb(4, 124, 118);
+      transition: .5s;
+      
+  }
+
+  .form-button Button:hover{
+      background-color: rgb(8, 104, 104);
+      color:rgb(248, 248, 248)
+  }
+
+
+
+  /* Make it responsive */
+
+@media only screen and (max-width:896px) {
+    .contact-section{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        
+    }
+
+    .form-img img{
+        width: 100%;
+        padding: 0 15px;
+        border-radius: 7px;
+        margin-bottom: 25px;
+    }
+
+    .form-section{
+
+      
+        width:100%;
+        text-align: center;
+      
+    }
+    .form-section Form{
+        margin-left: 15%;
+    }
+    
+}
+
+@media only screen and (min-width:899px) and (max-width:1080px) {
+    .contact-section{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        
+    }
+
+    .form-section Form{
+        margin-left: 15%;
+    }
+    
+    
+}

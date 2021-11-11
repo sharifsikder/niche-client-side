@@ -17,7 +17,7 @@ const Footer = () => {
 
 
             <div className='items-link'>
-                <h2>Our Items</h2>
+                <h2>More Cars</h2>
 
                 <div className='items-list'>
                 
