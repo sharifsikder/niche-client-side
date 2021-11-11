@@ -11,14 +11,14 @@ const AllOrders = () => {
 
     useEffect( () => {
 
-        fetch('http://localhost:7000/orders')
+        fetch('https://radiant-sierra-09128.herokuapp.com/orders')
         .then(res => res.json())
         .then(data => setUsers(data))
     }, []) 
 
     const handelDelete = (id) => {
  
-        const url = `http://localhost:7000/orders/${id}`;
+        const url = `https://radiant-sierra-09128.herokuapp.com/orders/${id}`;
         fetch(url, {
             method: 'DELETE'
         })

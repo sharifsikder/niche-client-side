@@ -10,7 +10,7 @@ const AddItems = () => {
     const onSubmit = data => {
         console.log(data);
 
-        axios.post('http://localhost:7000/products', data)
+        axios.post('https://radiant-sierra-09128.herokuapp.com/products', data)
         .then(res => {
             if(res.data.insertedId){
                 alert('added sucessfully')

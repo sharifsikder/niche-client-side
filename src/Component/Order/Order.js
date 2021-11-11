@@ -14,14 +14,14 @@ const Order = () => {
     const [product, setProduct] = useState({})
 
     useEffect(() => {
-        fetch(`http://localhost:7000/products/${id}`)
+        fetch(`https://radiant-sierra-09128.herokuapp.com/products/${id}`)
         .then(res => res.json())
         .then(data => setProduct(data))
     }, [])
 
     const onSubmit = data => {
         console.log(data)
-        fetch(`http://localhost:7000/orders`, {
+        fetch(`https://radiant-sierra-09128.herokuapp.com/orders`, {
             method: 'POST',
             headers:{
                 'content-type':'application/json'

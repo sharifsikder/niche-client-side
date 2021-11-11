@@ -14,7 +14,7 @@ const MyOrders = () => {
 const {user} = useAuht()
     const email = user.email
    useEffect(() => {
-       fetch(`http://localhost:7000/orders/${email}`)
+       fetch(`https://radiant-sierra-09128.herokuapp.com/orders/${email}`)
        .then(res => res.json())
        .then(data => setOrders(data))
    }, []);
@@ -28,7 +28,7 @@ const {user} = useAuht()
    
    const handelDelete = (id) => {
  
-    const url = `http://localhost:7000/orders/${id}`;
+    const url = `https://radiant-sierra-09128.herokuapp.com/orders/${id}`;
     fetch(url, {
         method: 'DELETE'
     })

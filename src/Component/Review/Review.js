@@ -13,7 +13,7 @@ const {user} = useAuht()
     const onSubmit = data => {
         console.log(data);
 
-         axios.post('http://localhost:7000/review', data)
+         axios.post('https://radiant-sierra-09128.herokuapp.com/review', data)
         .then(res => {
             if(res.data.insertedId){
                 alert('added sucessfully')

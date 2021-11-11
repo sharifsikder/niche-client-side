@@ -1,15 +1,14 @@
 import React, { useEffect, useState } from 'react';
-import useAuht from '../../hooks/useAuth';
 
 const ReviewCount = () => {
 
     const [reviews, setReviews] = useState([]);
     console.log(reviews)
   
-  const {user} = useAuht()
+ 
       
      useEffect(() => {
-         fetch("http://localhost:7000/review")
+         fetch("https://radiant-sierra-09128.herokuapp.com/review")
          .then(res => res.json())
          .then(data => setReviews(data))
      }, []);
