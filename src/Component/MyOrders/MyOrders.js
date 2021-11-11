@@ -55,7 +55,7 @@ const {user} = useAuht()
                 >
              
                      <div className="my-order">
-                         <h5>Welcome</h5>
+                         <h5>Welcome {order.name}</h5>
                      <h5>Car Model : {order.carName}</h5>
                      <p><i class="fas fa-map-marked-alt"></i> {order.address}</p>
                      <p><i class="fas fa-phone-alt"></i> {order.phone}</p>

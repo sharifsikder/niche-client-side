@@ -21,10 +21,10 @@ const Footer = () => {
 
                 <div className='items-list'>
                 
-                <p>Crispy Fry Burger</p>
-                <p>Stuff Crust Pizza</p>
-                <p>Tikka Heat Pizza</p>
-                <p>Wrangler Burger</p>
+                <p> Shevrolet Corvette Stingray Z51</p>
+                <p>Audi New Generation P00234</p>
+                <p>Shevrolet Corvette Stingray B50</p>
+                <p>Audi New Generation VT45</p>
           
 
                 </div>

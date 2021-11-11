@@ -54,6 +54,8 @@ const Header = () => {
    <Link className="dashborad" as={Link} to="/pay">Pay</Link>
    <Link className="dashborad" as={Link} to="/myorders">My Orders</Link>
    <Link className="dashborad" as={Link} to="/review">Review</Link>
+   <Link className="dashborad" as={Link} to="/allOrders">Manage All Orders</Link>
+   <Link className="dashborad" as={Link} to="/addItems">Add A Product</Link>
    <Link className="dashborad" onClick={logOut} as={Link} to="/">Logout</Link>
    
  </div>

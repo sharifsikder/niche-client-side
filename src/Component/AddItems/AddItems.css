@@ -1,0 +1,35 @@
+.add-item form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.add-item{
+    background-color: rgb(6, 67, 75);
+    padding-bottom: 40px;
+}
+
+.add-item form input, textarea{
+    width: 40%;
+    margin-bottom: 10px;
+
+}
+.add-item input, textarea{
+    padding: 15px 10px;
+    border-radius: 10px;
+}
+
+
+
+@media only screen and (max-width:896px) {
+
+    .add-item form input, textarea {
+        width: 81%;
+        margin-bottom: 10px
+    
+    
+    }
+
+}
+
+
